@@ -8,8 +8,11 @@
 }
 
 .Links {
-  color: cyan;
   margin-top: 25%;
+}
+
+a {
+  color: cyan;
 }
 
 a:visited {
