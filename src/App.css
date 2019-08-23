@@ -1,10 +1,19 @@
 .App {
   background-color: black;
-  height: 100vh;
-  min-height: 100vh; /* full screen div */
   color: cyan;
+  margin-left: 10%;
+  margin-top: 10%;
   /* background-size: cover;
   background-repeat: no-repeat; */
+}
+
+.Links {
+  color: cyan;
+  margin-top: 25%;
+}
+
+a:visited {
+  color: cyan;
 }
 
 .App-header {
