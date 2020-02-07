@@ -18,7 +18,10 @@ const index = () => {
 					<Window style={{width: 400}}>
 						<WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
 							<span>j.d.'s website</span>
-							<Button style={{ marginRight: '-6px', marginTop: '1px' }} size={'sm'} square>
+							<Button style={{ marginRight: '-6px', marginTop: '1px' }} size={'sm'} square onClick={(event) => {
+								// close the window
+								event.target.parentElement.parentElement.parentElement.style = 'display: none';
+							}}>
 								<span style={{ fontWeight: 'bold', transform: 'translateY(-1px)' }}>x</span>
 							</Button>
 						</WindowHeader>
@@ -35,12 +38,9 @@ const index = () => {
 							</Button>
 						</Toolbar>
 						<WindowContent>
-							<ul>
-								<li>something here</li>
-								<li>something here</li>
-								<li>something here</li>
-								<li>something here</li>
-							</ul>
+							<p>oh hey i'm j.d.</p>
+							<p>glad you're here.</p>
+							<p>stay as long as you like.</p>
 						</WindowContent>
 					</Window>
 				</div>

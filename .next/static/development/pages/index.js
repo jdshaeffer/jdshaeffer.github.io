@@ -10470,6 +10470,10 @@ var index = function index() {
     },
     size: 'sm',
     square: true,
+    onClick: function onClick(event) {
+      // close the window
+      event.target.parentElement.parentElement.parentElement.style = 'display: none';
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -10482,19 +10486,19 @@ var index = function index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
     },
     __self: this
   }, "x"))), __jsx(react95__WEBPACK_IMPORTED_MODULE_4__["Toolbar"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 28
     },
     __self: this
   }, __jsx(react95__WEBPACK_IMPORTED_MODULE_4__["Bar"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 29
     },
     __self: this
   }), __jsx(react95__WEBPACK_IMPORTED_MODULE_4__["Button"], {
@@ -10502,7 +10506,7 @@ var index = function index() {
     size: "sm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 30
     },
     __self: this
   }, "Portfolio"), __jsx(react95__WEBPACK_IMPORTED_MODULE_4__["Button"], {
@@ -10510,7 +10514,7 @@ var index = function index() {
     size: "sm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 33
     },
     __self: this
   }, "About"), __jsx(react95__WEBPACK_IMPORTED_MODULE_4__["Button"], {
@@ -10518,53 +10522,41 @@ var index = function index() {
     size: "sm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: this
   }, "Contact")), __jsx(react95__WEBPACK_IMPORTED_MODULE_4__["WindowContent"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, "something here"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  }, "something here"), __jsx("li", {
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: this
-  }, "something here"), __jsx("li", {
+  }, "oh hey i'm j.d."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
     __self: this
-  }, "something here")))))));
+  }, "glad you're here."), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, "stay as long as you like."))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjd%2FDocuments%2Fpersonal%2Fjdshaeffer.github.io%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************************/
@@ -10587,5 +10579,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

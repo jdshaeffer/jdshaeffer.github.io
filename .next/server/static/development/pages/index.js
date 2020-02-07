@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -191,6 +191,10 @@ const index = () => {
     },
     size: 'sm',
     square: true,
+    onClick: event => {
+      // close the window
+      event.target.parentElement.parentElement.parentElement.style = 'display: none';
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -203,19 +207,19 @@ const index = () => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
     },
     __self: undefined
   }, "x"))), __jsx(react95__WEBPACK_IMPORTED_MODULE_3__["Toolbar"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 28
     },
     __self: undefined
   }, __jsx(react95__WEBPACK_IMPORTED_MODULE_3__["Bar"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 29
     },
     __self: undefined
   }), __jsx(react95__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -223,7 +227,7 @@ const index = () => {
     size: "sm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 30
     },
     __self: undefined
   }, "Portfolio"), __jsx(react95__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -231,7 +235,7 @@ const index = () => {
     size: "sm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 33
     },
     __self: undefined
   }, "About"), __jsx(react95__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -239,53 +243,41 @@ const index = () => {
     size: "sm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: undefined
   }, "Contact")), __jsx(react95__WEBPACK_IMPORTED_MODULE_3__["WindowContent"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: undefined
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: undefined
-  }, "something here"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: undefined
-  }, "something here"), __jsx("li", {
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: undefined
-  }, "something here"), __jsx("li", {
+  }, "oh hey i'm j.d."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
     __self: undefined
-  }, "something here")))))));
+  }, "glad you're here."), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }, "stay as long as you like."))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
