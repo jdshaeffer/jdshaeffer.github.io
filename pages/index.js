@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar } from "react95";
+import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar, List, ListItem } from "react95";
+
+import { ContactButton } from '../components/ContactButton';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
@@ -14,6 +16,9 @@ const index = () => {
 			</Head>
 			<ResetStyles />
 			<ThemeProvider theme={themes.default}>
+				<div style={{position: 'absolute', left: '50%', top: '45%', transform: 'translate(-50%, 50%)'}}>
+					<p>gotcha haha</p>
+				</div>
 				<div style={{position: 'absolute', left: '50%', top: '30%', transform: 'translate(-50%, 50%)'}}>
 					<Window style={{width: 400}}>
 						<WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
@@ -33,9 +38,7 @@ const index = () => {
 							<Button variant='menu' size='sm'>
 								About
 							</Button>
-							<Button variant='menu' size='sm'>
-								Contact
-							</Button>
+							<ContactButton />
 						</Toolbar>
 						<WindowContent>
 							<p>oh hey i'm j.d.</p>
