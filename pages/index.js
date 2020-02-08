@@ -5,6 +5,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar, Hourglass } from "react95";
 
 import { ContactButton } from '../components/ContactButton';
+import { Images } from '../components/Images';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
@@ -25,6 +26,7 @@ const index = () => {
 				<title>j.d. shaeffer</title>
 			</Head>
 			<ResetStyles />
+			<Images />
 			<ThemeProvider theme={themes.default}>
 				<div style={{position: 'absolute', left: '50%', top: '45%', transform: 'translate(-50%, 50%)'}}>
 					<p>gotcha haha</p>
@@ -54,7 +56,7 @@ const index = () => {
 									</>
 								)
 							}}>
-								portfolio
+								projects
 							</Button>
 							<Button variant='menu' size='sm' onClick={() => {
 								setContent(
