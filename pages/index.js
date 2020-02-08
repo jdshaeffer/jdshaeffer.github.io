@@ -4,7 +4,6 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar } from "react95";
 
 import { ContactButton } from '../components/ContactButton';
-import { Content } from '../components/Content';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
@@ -29,7 +28,7 @@ const index = () => {
 					<p>gotcha haha</p>
 				</div>
 				<div style={{position: 'absolute', left: '50%', top: '25%', transform: 'translate(-50%, 50%)'}}>
-					<Window style={{width: 400}}>
+					<Window style={{width: 500}}>
 						<WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
 							<span>j.d.'s website</span>
 							<Button style={{ marginRight: '-6px', marginTop: '1px' }} size={'sm'} square onClick={(event) => {
@@ -42,18 +41,18 @@ const index = () => {
 						<Toolbar>
 							<Bar />
 							<Button variant='menu' size='sm'>
-								Portfolio
+								portfolio
 							</Button>
 							<Button variant='menu' size='sm' onClick={() => {
 								setContent(
 									<>
-										<p>stuff</p>
-										<p>stuff</p>
-										<p>stuff</p>
+										<p>i'm a full stack web dev, usually coding javascript apps.</p>
+										<p>react and next.js are my fav front end</p>
+										<p>node, express and a good db are my fav back end </p>
 									</>
 								)
 							}}>
-								About
+								about
 							</Button>
 							<ContactButton />
 						</Toolbar>

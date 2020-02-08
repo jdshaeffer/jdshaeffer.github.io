@@ -48,7 +48,7 @@ export const ContactButton = () => {
 				</List>
 				)}
 				<Button variant='menu' size='sm' onClick={handleClick}>
-					Contact
+					contact
 				</Button>
 			</div>
 		</div>
