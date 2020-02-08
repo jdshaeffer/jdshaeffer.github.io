@@ -42,14 +42,25 @@ const index = () => {
 						</WindowHeader>
 						<Toolbar>
 							<Bar />
-							<Button variant='menu' size='sm'>
+							<Button variant='menu' size='sm' onClick={() => {
+								setContent(
+									<>
+										<p>the gear calculator (in development, stay tuned)</p>
+										<p>~~~~ </p>
+										<Link href='https://github.com/jdshaeffer/dunnet-solver'>
+											<a>dunnet solver (fun python automation for dunnet by ron schnell)</a>
+										</Link>
+										<p>~~~~ </p>
+									</>
+								)
+							}}>
 								portfolio
 							</Button>
 							<Button variant='menu' size='sm' onClick={() => {
 								setContent(
 									<>
 										<p>i do full stack web dev in the form of sick javascript apps.</p>
-										<Link href='/resume.pdf' >
+										<Link href='/resume.pdf'>
 											<a><Hourglass /></a>
 										</Link>
 										<p>^^^ click to peek my resume</p>
