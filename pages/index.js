@@ -5,7 +5,6 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar, Hourglass } from "react95";
 
 import { ContactButton } from '../components/ContactButton';
-import resume from '../resume.pdf';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
@@ -50,10 +49,9 @@ const index = () => {
 								setContent(
 									<>
 										<p>i do full stack web dev in the form of sick javascript apps.</p>
-										{/* <Link href='/pdf'>
+										<Link href='/resume.pdf' >
 											<a><Hourglass /></a>
-										</Link> */}
-										<a href={resume}><Hourglass /></a>
+										</Link>
 										<p>^^^ click to peek my resume</p>
 									</>
 								)
