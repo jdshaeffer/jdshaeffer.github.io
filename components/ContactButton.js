@@ -37,14 +37,15 @@ export const ContactButton = () => {
 				{ open && (
 				<List
 					style={{zIndex: '9999'}} 
-					horizontalAlign="right" 
+					horizontalAlign="left" 
 					verticalAlign="bottom" 
 					open={open} 
 					onClick={handleClose}
 				>
-					<ListItem size="sm">Email</ListItem>
 					<ListItem size="sm" onClick={() => window.open('https://twitter.com/jdshaeff')}>Twitter</ListItem>
-					<ListItem size="sm">Phone</ListItem>
+					<ListItem size="sm" onClick={() => window.open('https://github.com/jdshaeffer')}>GitHub</ListItem>
+					<ListItem size="sm" disabled>shaefferjd@gmail.com</ListItem>
+					<ListItem size="sm" disabled>480.296.4934</ListItem>
 				</List>
 				)}
 				<Button variant='menu' size='sm' onClick={handleClick}>
