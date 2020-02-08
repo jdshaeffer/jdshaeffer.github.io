@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { List, ListItem, Button } from 'react95';
 
-export const ContactButton = (props) => {
+export const ContactButton = () => {
 	const [open, setOpen] = useState(false)
 
 	const handleClick = () => {
@@ -24,7 +24,7 @@ export const ContactButton = (props) => {
 			document.addEventListener('mousedown', handleOutsideClick);
 			return () => {
 				document.removeEventListener('mousedown', handleOutsideClick);
-			}
+			};
 		})
 	}
 

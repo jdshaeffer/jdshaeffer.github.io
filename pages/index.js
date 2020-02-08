@@ -1,14 +1,23 @@
 import Head from 'next/head';
+import { useState } from 'react';
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar, List, ListItem } from "react95";
+import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar } from "react95";
 
 import { ContactButton } from '../components/ContactButton';
+import { Content } from '../components/Content';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
 `;
 
 const index = () => {
+	const [content, setContent] = useState(
+		<>
+			<p>oh hey i'm j.d.</p>
+			<p>glad you're here.</p>
+			<p>stay as long as you like.</p>
+		</>
+	);
 	return (
 		<>
 			<Head>
@@ -19,7 +28,7 @@ const index = () => {
 				<div style={{position: 'absolute', left: '50%', top: '45%', transform: 'translate(-50%, 50%)'}}>
 					<p>gotcha haha</p>
 				</div>
-				<div style={{position: 'absolute', left: '50%', top: '30%', transform: 'translate(-50%, 50%)'}}>
+				<div style={{position: 'absolute', left: '50%', top: '25%', transform: 'translate(-50%, 50%)'}}>
 					<Window style={{width: 400}}>
 						<WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
 							<span>j.d.'s website</span>
@@ -35,21 +44,27 @@ const index = () => {
 							<Button variant='menu' size='sm'>
 								Portfolio
 							</Button>
-							<Button variant='menu' size='sm'>
+							<Button variant='menu' size='sm' onClick={() => {
+								setContent(
+									<>
+										<p>stuff</p>
+										<p>stuff</p>
+										<p>stuff</p>
+									</>
+								)
+							}}>
 								About
 							</Button>
 							<ContactButton />
 						</Toolbar>
 						<WindowContent>
-							<p>oh hey i'm j.d.</p>
-							<p>glad you're here.</p>
-							<p>stay as long as you like.</p>
+							{content}
 						</WindowContent>
 					</Window>
 				</div>
 			</ThemeProvider>
 		</>
-	)
+	);
 }
 
 export default index;
