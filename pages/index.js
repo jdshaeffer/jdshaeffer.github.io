@@ -1,9 +1,11 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState } from 'react';
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar } from "react95";
+import { reset, themes, Window, WindowHeader, WindowContent, Toolbar, Button, Bar, Hourglass } from "react95";
 
 import { ContactButton } from '../components/ContactButton';
+import resume from '../resume.pdf';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
@@ -12,7 +14,8 @@ const ResetStyles = createGlobalStyle`
 const index = () => {
 	const [content, setContent] = useState(
 		<>
-			<p>oh hey i'm j.d.</p>
+			<p>oh hey.</p>
+			<p>i'm j.d.</p>
 			<p>glad you're here.</p>
 			<p>stay as long as you like.</p>
 		</>
@@ -46,9 +49,12 @@ const index = () => {
 							<Button variant='menu' size='sm' onClick={() => {
 								setContent(
 									<>
-										<p>i'm a full stack web dev, usually coding javascript apps.</p>
-										<p>react and next.js are my fav front end</p>
-										<p>node, express and a good db are my fav back end </p>
+										<p>i do full stack web dev in the form of sick javascript apps.</p>
+										{/* <Link href='/pdf'>
+											<a><Hourglass /></a>
+										</Link> */}
+										<a href={resume}><Hourglass /></a>
+										<p>^^^ click to peek my resume</p>
 									</>
 								)
 							}}>
