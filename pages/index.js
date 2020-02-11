@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { reset, themes } from "react95";
+import Hidden from '@material-ui/core/Hidden';
 
 import { Images } from '../components/Images';
-import { CustomWindow } from '../components/CustomWindow';
+import { CustomWindowMobile } from '../components/CustomWindowMobile';
+import { CustomWindowDesktop } from '../components/CustomWindowDesktop';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
@@ -22,7 +24,12 @@ const index = () => {
 					<p>gotcha haha</p>
 				</div>
 				<div style={{position: 'absolute', left: '50%', top: '25%', transform: 'translate(-50%, 50%)'}}>
-					<CustomWindow />
+					<Hidden xsDown>
+						<CustomWindowDesktop/>
+					</Hidden>
+					<Hidden smUp>
+						<CustomWindowMobile />
+					</Hidden>
 				</div>
 			</ThemeProvider>
 		</>
