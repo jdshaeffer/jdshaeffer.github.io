@@ -4,7 +4,7 @@ import { Window, WindowHeader, WindowContent, Toolbar, Button, Bar, Hourglass } 
 
 import { ContactButton } from './ContactButton';
 
-export const CustomWindowMobile = () => {
+export const CustomWindow = (props) => {
 	const [content, setContent] = useState(
 		<>
 			<p>oh hey.</p>
@@ -16,7 +16,7 @@ export const CustomWindowMobile = () => {
 
   return (
     <>
-      <Window style={{width: 300}}>
+      <Window style={{width: props.size}}>
         <WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
           <span>j.d.'s website</span>
           <Button style={{ marginRight: '-6px', marginTop: '1px' }} size={'sm'} square onClick={(event) => {
@@ -32,11 +32,11 @@ export const CustomWindowMobile = () => {
             setContent(
               <>
                 <p>the gear calculator (in development, stay tuned)</p>
-                <p>~~~~ </p>
-                <Link href='https://github.com/jdshaeffer/dunnet-solver'>
-                  <a>dunnet solver (fun python automation for dunnet by ron schnell)</a>
-                </Link>
-                <p>~~~~ </p>
+                <p>~</p>
+                <a href='https://github.com/jdshaeffer/dunnet-solver'>
+                  dunnet solver (python automation for dunnet by ron schnell)
+                </a>
+                <p>~</p>
               </>
             )
           }}>
@@ -53,7 +53,7 @@ export const CustomWindowMobile = () => {
               </>
             )
           }}>
-            about
+            about/resume
           </Button>
           <ContactButton />
         </Toolbar>

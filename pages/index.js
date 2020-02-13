@@ -4,8 +4,7 @@ import { reset, themes } from "react95";
 import Hidden from '@material-ui/core/Hidden';
 
 import { Images } from '../components/Images';
-import { CustomWindowMobile } from '../components/CustomWindowMobile';
-import { CustomWindowDesktop } from '../components/CustomWindowDesktop';
+import { CustomWindow } from '../components/CustomWindow';
 
 const ResetStyles = createGlobalStyle`
   ${reset}
@@ -25,10 +24,12 @@ const index = () => {
 				</div>
 				<div style={{position: 'absolute', left: '50%', top: '25%', transform: 'translate(-50%, 50%)'}}>
 					<Hidden xsDown>
-						<CustomWindowDesktop/>
+						{/* desktop */}
+						<CustomWindow size={500} />
 					</Hidden>
 					<Hidden smUp>
-						<CustomWindowMobile />
+						{/* mobile */}
+						<CustomWindow size={300} />
 					</Hidden>
 				</div>
 			</ThemeProvider>
