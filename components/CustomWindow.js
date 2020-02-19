@@ -31,11 +31,13 @@ export const CustomWindow = (props) => {
           <Button variant='menu' size='sm' onClick={() => {
             setContent(
               <>
-                <p>the gear calculator (in development, stay tuned)</p>
+                <p>the gear list (a MERN stack app in development)</p>
                 <p>~</p>
                 <a href='https://github.com/jdshaeffer/dunnet-solver'>
                   dunnet solver (python automation for dunnet by ron schnell)
                 </a>
+                <p>~</p>
+                <p>This site was built in next.js and deployed with zeit now.</p>
                 <p>~</p>
               </>
             )
@@ -46,6 +48,7 @@ export const CustomWindow = (props) => {
             setContent(
               <>
                 <p>i do full stack web dev in the form of sick javascript apps.</p>
+                <p>i graduate from asu in may 2020!</p>
                 <Link href='/resume.pdf'>
                   <a><Hourglass /></a>
                 </Link>
