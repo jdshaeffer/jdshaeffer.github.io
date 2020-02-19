@@ -19,7 +19,7 @@ const index = () => {
 			<ResetStyles />
 			<Images />
 			<ThemeProvider theme={themes.default}>
-				<div style={{position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, 50%)'}}>
+				<div style={{position: 'absolute', left: '50%', top: '55%', transform: 'translate(-50%, 50%)'}}>
 					<p>gotcha haha</p>
 				</div>
 				<div style={{position: 'absolute', left: '50%', top: '25%', transform: 'translate(-50%, 50%)'}}>
