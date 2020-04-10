@@ -17,15 +17,14 @@ const index = () => {
 				<title>j.d. shaeffer</title>
 			</Head>
 			<ResetStyles />
-			<Images />
+			<div style={{position: 'absolute', left: '50%', top: '55%', transform: 'translate(-50%, 50%)'}}>
+				<p>gotcha haha</p>
+			</div>
 			<ThemeProvider theme={themes.default}>
-				<div style={{position: 'absolute', left: '50%', top: '55%', transform: 'translate(-50%, 50%)'}}>
-					<p>gotcha haha</p>
-				</div>
-				<div style={{position: 'absolute', left: '50%', top: '25%', transform: 'translate(-50%, 50%)'}}>
+				<div>
 					<Hidden xsDown>
 						{/* desktop */}
-						<CustomWindow size={500} />
+						<CustomWindow size={600} />
 					</Hidden>
 					<Hidden smUp>
 						{/* mobile */}
@@ -33,6 +32,7 @@ const index = () => {
 					</Hidden>
 				</div>
 			</ThemeProvider>
+			<Images />
 		</>
 	);
 }

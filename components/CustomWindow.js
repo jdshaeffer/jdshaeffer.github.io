@@ -15,10 +15,10 @@ export const CustomWindow = (props) => {
   );
 
   return (
-    <>
-      <Window style={{width: props.size}}>
+    <div styles={{position: 'relative'}}>
+      <Window style={{width: props.size, position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
         <WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-          <span>j.d.'s website</span>
+          <span>j.d.'s portfolio</span>
           <Button style={{ marginRight: '-6px', marginTop: '1px' }} size={'sm'} square onClick={(event) => {
             // close the window
             event.target.parentElement.parentElement.parentElement.style = 'display: none';
@@ -37,18 +37,27 @@ export const CustomWindow = (props) => {
                   dunnet solver (python automation for dunnet by ron schnell)
                 </a>
                 <p>~</p>
-                <p>This site was built in next.js and deployed with zeit now.</p>
+                <p>this site was built in next.js and deployed with zeit now.</p>
                 <p>~</p>
               </>
             )
           }}>
-            projects
+            personal projects
+          </Button>
+          <Button variant='menu' size='sm' onClick={() => {
+            setContent(
+              <>
+                <p>nasa psyche meteorite image analysis system</p>
+                <small></small>
+              </>
+            )
+          }}>
+           team projects 
           </Button>
           <Button variant='menu' size='sm' onClick={() => {
             setContent(
               <>
                 <p>i do full stack web dev in the form of sick javascript apps.</p>
-                <p>i graduate from asu in may 2020!</p>
                 <Link href='/resume.pdf'>
                   <a><Hourglass /></a>
                 </Link>
@@ -64,6 +73,6 @@ export const CustomWindow = (props) => {
           {content}
         </WindowContent>
       </Window>
-    </>
+    </div>
   );
 }
