@@ -48,7 +48,10 @@ export const CustomWindow = (props) => {
             setContent(
               <>
                 <p>nasa psyche meteorite image analysis system</p>
-                <small></small>
+                <p>~</p>
+                <p>landing page for kip project - Gatsby.js</p><a href='https://kipkit.io'>https://kipkit.io</a>
+                <p>~</p>
+                <p>landing page for rayo project - Typescript, Material UI</p><a href='https://rayocares.com'>https://rayocares.com</a>
               </>
             )
           }}>

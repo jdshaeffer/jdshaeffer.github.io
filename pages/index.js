@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Graphic from '../components/Graphic';
+// import Graphic from '../components/Graphic';
 
 // this component is v1 of jdshaeffer.com
-// import Windows95SinglePage from '../components/Windows95SinglePage';
+import Windows95SinglePage from '../components/Windows95SinglePage';
 
 const index = () => {
 	return (
@@ -10,8 +10,8 @@ const index = () => {
 			<Head>
 				<title>j.d. shaeffer</title>
 			</Head>
-			{/* <Graphic /> */}
-			<h1>hello</h1>
+			<h1>this site is a bit under construction, thanks for your patience!</h1>
+			<Windows95SinglePage />
 		</>
 	);
 }
