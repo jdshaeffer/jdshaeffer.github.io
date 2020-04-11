@@ -10,7 +10,7 @@ const index = () => {
 			<Head>
 				<title>j.d. shaeffer</title>
 			</Head>
-			<h1>this site is a bit under construction, thanks for your patience!</h1>
+			<h1 style={{margin: '1%'}}>this site is a bit under construction, thanks for your patience!</h1>
 			<Windows95SinglePage />
 		</>
 	);
