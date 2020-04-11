@@ -15,8 +15,8 @@ export const CustomWindow = (props) => {
   );
 
   return (
-    <div styles={{position: 'relative'}}>
-      <Window style={{width: props.size, position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
+    <div>
+      <Window style={{width: props.size, position: 'fixed', top: '40%', left: '30%'}}>
         <WindowHeader style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
           <span>j.d.'s portfolio</span>
           <Button style={{ marginRight: '-6px', marginTop: '1px' }} size={'sm'} square onClick={(event) => {

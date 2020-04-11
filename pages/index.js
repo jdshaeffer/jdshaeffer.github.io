@@ -17,7 +17,7 @@ const index = () => {
 				<title>j.d. shaeffer</title>
 			</Head>
 			<ResetStyles />
-			<div style={{position: 'absolute', left: '50%', top: '55%', transform: 'translate(-50%, 50%)'}}>
+			<div style={{position: 'absolute', left: '50%', top: '45%', transform: 'translate(-50%, 50%)'}}>
 				<p>gotcha haha</p>
 			</div>
 			<ThemeProvider theme={themes.default}>
@@ -28,7 +28,7 @@ const index = () => {
 					</Hidden>
 					<Hidden smUp>
 						{/* mobile */}
-						<CustomWindow size={300} />
+						<CustomWindow size={400} />
 					</Hidden>
 				</div>
 			</ThemeProvider>
