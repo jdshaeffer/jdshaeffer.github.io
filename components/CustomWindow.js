@@ -37,7 +37,7 @@ export const CustomWindow = (props) => {
                   dunnet solver (python automation for dunnet by ron schnell)
                 </a>
                 <p>~</p>
-                <p>this site was built in next.js and deployed with zeit now.</p>
+                <p>this site was built in Next.js and deployed with zeit now.</p>
                 <p>~</p>
               </>
             )
@@ -47,11 +47,11 @@ export const CustomWindow = (props) => {
           <Button variant='menu' size='sm' onClick={() => {
             setContent(
               <>
-                <p>nasa psyche meteorite image analysis system</p>
+                <p>nasa psyche meteorite image analysis system - HTML/CSS/JS/Node/Express</p>
                 <p>~</p>
                 <p>landing page for kip project - Gatsby.js</p><a href='https://kipkit.io'>https://kipkit.io</a>
                 <p>~</p>
-                <p>landing page for rayo project - Typescript, Material UI</p><a href='https://rayocares.com'>https://rayocares.com</a>
+                <p>landing page for rayo project - Typescript/Material UI</p><a href='https://rayocares.com'>https://rayocares.com</a>
               </>
             )
           }}>
