@@ -1,5 +1,2 @@
-node_modules/
-.next/
-.DS_Store
 
-.now
+node_modules
