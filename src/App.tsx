@@ -20,13 +20,13 @@ function App() {
             </a>
           </li>
           <li>
-            <a href='https://jdshaeffer.github.io/hips/'>hips</a>
+            <a>hips</a>
           </li>
           <li>
-            <a href='https://jdshaeffer.github.io/nycmud/'>nycmud</a>
+            <a>nycmud</a>
           </li>
           <li>
-            <a href='https://jdshaeffer.github.io/journal/'>journal</a>
+            <a>journal</a>
           </li>
         </ul>
       </div>
