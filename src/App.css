@@ -5,9 +5,22 @@
   color: white;
 }
 
-.app-header {
-  display: flex;
+.column {
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.project-list {
+  text-align: left;
+  display: inline-block;
+  margin-top: -5px;
+}
+
+a {
+  color: white;
+}
+
+a::after {
+  color: white;
 }
