@@ -19,15 +19,9 @@ function App() {
               dungeon-solitaire
             </a>
           </li>
-          <li>
-            <a>hips</a>
-          </li>
-          <li>
-            <a>nycmud</a>
-          </li>
-          <li>
-            <a>journal</a>
-          </li>
+          <li>hips</li>
+          <li>nycmud</li>
+          <li>journal</li>
         </ul>
       </div>
       <div className='column'>
