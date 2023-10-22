@@ -6,7 +6,7 @@ function App() {
       <div className='column'>
         <h1>hey</h1>
         <h2>i'm jd</h2>
-        <p>welcome to this little site on the web</p>
+        <p>welcome to this little corner of the web</p>
         <p>hosting some projects here:</p>
         <ul className='project-list'>
           <li>
@@ -19,7 +19,9 @@ function App() {
               dungeon-solitaire
             </a>
           </li>
-          <li>hips</li>
+          <li>
+            <a href='https://jdshaeffer.github.io/hips/'>hips</a>
+          </li>
           <li>nycmud</li>
           <li>journal</li>
         </ul>
