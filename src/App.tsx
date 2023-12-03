@@ -10,17 +10,12 @@ function App() {
         <p>hosting some projects here:</p>
         <ul className='project-list'>
           <li>
-            <a href='https://jdshaeffer.github.io/bikepacking-events/'>
-              bikepacking-events
-            </a>
+            <a href='https://jdshaeffer.github.io/hips/'>hips</a>
           </li>
           <li>
             <a href='https://jdshaeffer.github.io/dungeon-solitaire/'>
               dungeon-solitaire
             </a>
-          </li>
-          <li>
-            <a href='https://jdshaeffer.github.io/hips/'>hips</a>
           </li>
         </ul>
       </div>
