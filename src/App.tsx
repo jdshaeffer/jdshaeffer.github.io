@@ -22,7 +22,9 @@ function App() {
           <li>
             <a href='https://jdshaeffer.github.io/hips/'>hips</a>
           </li>
-          <li>nycmud</li>
+          <li>
+            <a href='https://nycmud.com/'>nycmud</a>
+          </li>
           <li>journal</li>
         </ul>
       </div>
