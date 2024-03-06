@@ -7,14 +7,19 @@ function App() {
         <h1>hey</h1>
         <h2>i'm jd</h2>
         <p>welcome to this little corner of the web</p>
-        <p>hosting some projects here:</p>
+        <p>hosting some personal projects here:</p>
         <ul className='project-list'>
+          <li>
+            <a href='https://jdshaeffer.github.io/bikepacking-events/'>
+              bikepacking events
+            </a>
+          </li>
           <li>
             <a href='https://jdshaeffer.github.io/hips/'>hips</a>
           </li>
           <li>
             <a href='https://jdshaeffer.github.io/dungeon-solitaire/'>
-              dungeon-solitaire
+              dungeon solitaire
             </a>
           </li>
         </ul>
