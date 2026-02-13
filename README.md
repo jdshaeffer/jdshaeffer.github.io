@@ -1,6 +1,6 @@
 # jdshaeffer.github.io
 
-### src code for my home page
+### src code for my homepage
 
 ## stuff:
 

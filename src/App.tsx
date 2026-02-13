@@ -7,7 +7,7 @@ const App = () => {
     <>
       <div className='absolute w-full h-10 text-center top-1/2 -mt-8'>
         <h1 className='text-2xl'>jd shaeffer</h1>
-        <p>software engineer</p>
+        <p>full stack software engineer</p>
       </div>
       <div className='absolute w-full h-5 text-center top-1/2 mt-12 z-10'>
         <a href='https://github.com/jdshaeffer'>github</a> |{' '}
@@ -16,7 +16,6 @@ const App = () => {
       </div>
 
       <Canvas>
-        <ambientLight intensity={Math.PI / 2} />
         <spotLight
           position={[10, 10, 10]}
           angle={0.15}
