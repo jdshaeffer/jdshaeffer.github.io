@@ -25,12 +25,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: set up node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: cache deps
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: |
             **/node_modules
