@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
+html,
+body,
+#root {
   margin: unset;
   height: 100%;
-  font-family: 'Roboto',
-    monospace;
+  font-family: 'Roboto', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
-  color: white
+  color: white;
 }
 
 a {

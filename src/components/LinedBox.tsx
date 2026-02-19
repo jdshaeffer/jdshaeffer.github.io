@@ -7,7 +7,7 @@ const LinedBox = (props: any) => {
   const meshRef = useRef<Mesh>(null!);
 
   // executes code on every rendered frame
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     meshRef.current.rotation.x += delta / 2;
     meshRef.current.rotation.y += delta / 2;
   });
