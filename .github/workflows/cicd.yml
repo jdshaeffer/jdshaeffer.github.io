@@ -15,8 +15,12 @@ on:
 
 jobs:
   build:
-    name: Deploy
+    name: Build and Deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     strategy:
       matrix:
         node-version: [22.x]
@@ -42,13 +46,13 @@ jobs:
       - name: build
         run: npm run build
 
-      - name: deploy
-        run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          npx gh-pages -d dist -r https://${github_token}@github.com/${repository}.git
-        env:
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-          repository: ${{ github.repository }}
+      - name: setup pages
+        uses: actions/configure-pages@v4
+
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: deploy to github pages
+        uses: actions/deploy-pages@v4
